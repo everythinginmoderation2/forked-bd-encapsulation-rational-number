@@ -1,4 +1,4 @@
-package com.amazon.encapsulation;
+package com.amazon.ata.encapsulation;
 
 /**
  * Represents a rational number, always kept in the most reduced form. By definition a rational number is a number that

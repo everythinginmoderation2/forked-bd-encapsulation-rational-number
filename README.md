@@ -11,7 +11,7 @@ on Canvas)
 
 ## Introduction to the Example Code
 
-Take a look at the `RationalNumber` class in the **'com.amazon.ata.encapsulation.prework'** Java package. It provides 
+Take a look at the `RationalNumber` class in the **'com.amazon.ata.encapsulation'** Java package. It provides 
 users the ability to add two rational numbers as well as display the number as a fraction or decimal value. The rational
 number the class represents is always kept in reduced form.
 
@@ -20,7 +20,7 @@ number the class represents is always kept in reduced form.
 in "reduced form" would be 1/2)
 
 The `RationalNumberTest` class, located in the
-**'com.amazon.ata.encapsulation.prework'** Java package of the tst/ directory, contains seven unit tests for the
+**'com.amazon.ata.encapsulation'** Java package of the tst/ directory, contains seven unit tests for the
 RationalNumber class.
 
 As you can see, the `RationalNumber` class is not well encapsulated. `RationalNumberTest`

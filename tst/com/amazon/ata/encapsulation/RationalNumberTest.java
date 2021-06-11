@@ -1,4 +1,4 @@
-package com.amazon.encapsulation;
+package com.amazon.ata.encapsulation;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

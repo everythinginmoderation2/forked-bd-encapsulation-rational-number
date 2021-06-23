@@ -1,13 +1,6 @@
 ### Encapsulation Pre-work
 
-**branch name: encapsulation-prework**
-
-(if you're not sure what to do with the branch name, go back to the
-[Coding Activity Instructions page](https://mlu.instructure.com/courses/609/pages/coding-activity-instructions)
-on Canvas)
-
-**RDE workflows:**
-- `encapsulation-prework`
+**GitHub repo:** [ebd-encapsulation-rational-number](https://github.com/LambdaSchool/ebd-encapsulation-rational-number)
 
 ## Introduction to the Example Code
 
@@ -89,11 +82,8 @@ new `RationalNumber` with the same value.
 
 ### Push your work
 
-Now it's time to push your fixes! You can run the following RDE workflow before committing to ensure
-your try is in working order: `rde wflow run encapsulation-prework`. Remember from
-[the Coding Try instructions](https://mlu.instructure.com/courses/609/pages/coding-activity-instructions)
-that you don't have to get a CR approval to push this code, but you will want
-to copy the URL for your commit so you can complete the prework quiz in Canvas.
+Now it's time to push your fixes! You can run the following Gradle command before committing to ensure
+your try is in working order: `./gradlew -q clean :test`.
 
 ## Note on `assertThrows`
 

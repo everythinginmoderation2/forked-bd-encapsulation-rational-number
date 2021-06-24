@@ -25,7 +25,7 @@ provides an example of this.
 The test case `updateDenominator_withZeroDenominator_throwsException` creates an invalid rational number where the
 denominator is 0. Run the tests in IntelliJ by clicking the play button left of `public class RationalNumberTest`
 near the top of the file. If you prefer to run tests in your terminal, use the command
-`rde wflow run encapsulation-prework`. You should see results similar to this (you may need to scroll a bit in the
+`./gradlew -q clean :test`. You should see results similar to this (you may need to scroll a bit in the
 terminal):
 
 ```text

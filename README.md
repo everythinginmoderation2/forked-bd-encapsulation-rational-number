@@ -1,7 +1,3 @@
-### Encapsulation Pre-work
-
-**GitHub repo:** [ebd-encapsulation-rational-number](https://github.com/LambdaSchool/ebd-encapsulation-rational-number)
-
 ## Introduction to the Example Code
 
 Take a look at the `RationalNumber` class in the **'com.amazon.ata.encapsulation'** Java package. It provides 

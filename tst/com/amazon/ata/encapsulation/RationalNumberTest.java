@@ -35,6 +35,18 @@ public class RationalNumberTest {
         assertEquals(oneString, toStringOutput, "Expected 1 to print as 1/1");
     }
 
+     @Test
+     public void constructor_existingRationalNumber_createsCopy() {
+         //GIVEN
+         RationalNumber original = new RationalNumber(1, 3);
+
+         //WHEN
+         RationalNumber rationalCopy = new RationalNumber(original);
+
+         //THEN
+         assertEquals(rationalCopy, original, "Expected 1/3 to equal 1/3");
+     }
+
     @Test
     public void constructor_onNonReducedFormRational_reducesToReducedForm() {
         //WHEN

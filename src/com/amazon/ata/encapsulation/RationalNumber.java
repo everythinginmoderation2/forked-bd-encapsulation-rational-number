@@ -29,6 +29,14 @@ public class RationalNumber {
     }
 
     /**
+     * Constructs a mutable copy of a rational number, consisting of the same values as the original
+     * @param original the rational number being copied
+     */
+    public RationalNumber(RationalNumber original) {
+        update(original.getNumerator(), original.getDenominator());
+    }
+
+    /**
      * Provides access to numerator field. Returns the numerator (Initialized as zero).
      */
     public int getNumerator() {

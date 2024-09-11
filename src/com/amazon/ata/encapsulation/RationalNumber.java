@@ -6,8 +6,8 @@ package com.amazon.ata.encapsulation;
  */
 public class RationalNumber {
 
-    public int numerator;
-    public int denominator;
+    private int numerator;
+    private int denominator;
 
     /**
      * Constructs a new rational number representing 0. Numerator = 0, Denominator = 1.
@@ -24,13 +24,35 @@ public class RationalNumber {
      * @param denominator the rational number's denominator (the one on the bottom)
      */
     public RationalNumber(int numerator, int denominator) {
-        if (denominator == 0) {
+        update(numerator, denominator);
+        reduce();
+    }
+
+    /**
+     * Provides access to numerator field. Returns the numerator (Initialized as zero).
+     */
+    public int getNumerator() {
+        return numerator;
+    }
+
+    /**
+     * Provides access to denominator field. Returns the denominator (Initialized as one).
+     */
+    public int getDenominator() {
+        return denominator;
+    }
+
+
+    /**
+     * Updates a rational number without directly changing this original classes initiated fields
+     */
+    public void update(int newNumerator, int newDenominator) {
+        if (newDenominator == 0) {
             throw new IllegalArgumentException("Denominator cannot be 0.");
         }
-        this.numerator = numerator;
-        this.denominator = denominator;
-
-        reduce();
+            this.numerator = newNumerator;
+            this.denominator = newDenominator;
+            this.reduce();
     }
 
     /**
@@ -49,8 +71,8 @@ public class RationalNumber {
      * @return a new rational number that is the result of addition.
      */
     public RationalNumber plus(RationalNumber b) {
-        int num = (this.numerator * b.denominator) + (b.numerator * this.denominator);
-        int denom = this.denominator * b.denominator;
+        int num = (getNumerator() * b.denominator) + (b.numerator * getDenominator());
+        int denom = getDenominator() * b.denominator;
         return new RationalNumber(num, denom);
     }
 
@@ -64,7 +86,7 @@ public class RationalNumber {
         // Cast it as a RationalNumber so we can use its methods and fields
         final RationalNumber other = (RationalNumber) obj;
 
-        return this.denominator == other.denominator && this.numerator == other.numerator;
+        return getDenominator() == other.denominator && getNumerator() == other.numerator;
     }
 
     /**
